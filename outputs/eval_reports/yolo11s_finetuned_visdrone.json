@@ -1,0 +1,28 @@
+{
+  "predictions_file": "outputs/YOLO/yolo_predictions/yolo_finetuned_predictions.json",
+  "gt_file": "data/coco_gt/visdrone_val.json",
+  "class_map_file": null,
+  "num_images_evaluated": 548,
+  "num_predictions_after_mapping": 28668,
+  "metrics": {
+    "mAP_0.5": 0.2981776562446247,
+    "mAP_0.5:0.95": 0.18834299770435314,
+    "mAP_0.75": 0.19785209168752782,
+    "mAP_small": 0.094326349954907,
+    "mAP_medium": 0.29902696816811464,
+    "mAP_large": 0.4474185555249662,
+    "recall_at_0.5": 0.3570398799196122,
+    "per_class_AP_0.5:0.95": {
+      "pedestrian": 0.1586225811451427,
+      "people": 0.08113225719583418,
+      "bicycle": 0.039486929337950505,
+      "car": 0.512633714484618,
+      "van": 0.24718022262159645,
+      "truck": 0.2039527591006978,
+      "tricycle": 0.10518446368425531,
+      "awning-tricycle": 0.053953487352900176,
+      "bus": 0.32774163493009106,
+      "motor": 0.1535419271904454
+    }
+  }
+}

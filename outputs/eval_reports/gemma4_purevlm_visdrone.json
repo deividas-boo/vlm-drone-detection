@@ -1,0 +1,28 @@
+{
+  "predictions_file": "outputs/VLM/gemma4_explanations+detection/gemma4_pure_predictions.json",
+  "gt_file": "data/coco_gt/visdrone_val.json",
+  "class_map_file": null,
+  "num_images_evaluated": 548,
+  "num_predictions_after_mapping": 7423,
+  "metrics": {
+    "mAP_0.5": 0.011123323649133014,
+    "mAP_0.5:0.95": 0.0037250885875953635,
+    "mAP_0.75": 0.0022204055329745815,
+    "mAP_small": 0.0004008372752340578,
+    "mAP_medium": 0.0033630387563435373,
+    "mAP_large": 0.07703912584769348,
+    "recall_at_0.5": 0.03018622487458241,
+    "per_class_AP_0.5:0.95": {
+      "pedestrian": 0.001688824287937844,
+      "people": 0.0026477647764776473,
+      "bicycle": 0.00015984791756486574,
+      "car": 0.013377808136217943,
+      "van": 0.004912676138710953,
+      "truck": 0.0075988602887317605,
+      "tricycle": 0.0005421970768505421,
+      "awning-tricycle": 0.0,
+      "bus": 0.00505481890616581,
+      "motor": 0.0012680883472962682
+    }
+  }
+}

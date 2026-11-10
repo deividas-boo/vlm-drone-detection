@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# VisDrone dataset (download separately, see README)
+data/visdrone_raw/
+
+# Regenerated outputs
+outputs/YOLO/yolo_visualizations*/
+outputs/VLM/*/visuals/
+outputs/ground_truth_examples/
+
+# LaTeX build files
+paper/latex/*.aux
+paper/latex/*.log
+paper/latex/*.out
+paper/latex/*.bbl
+paper/latex/*.blg
+paper/latex/*.synctex.gz
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

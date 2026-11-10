@@ -1,0 +1,28 @@
+{
+  "predictions_file": "outputs/VLM/qwen3_explanations+detection/qwen3_pure_predictions.json",
+  "gt_file": "data/coco_gt/visdrone_val.json",
+  "class_map_file": null,
+  "num_images_evaluated": 548,
+  "num_predictions_after_mapping": 19587,
+  "metrics": {
+    "mAP_0.5": 0.02323451812862718,
+    "mAP_0.5:0.95": 0.01474050381077455,
+    "mAP_0.75": 0.014700467119039556,
+    "mAP_small": 0.0050877352002235655,
+    "mAP_medium": 0.031141420155642544,
+    "mAP_large": 0.19965237425785673,
+    "recall_at_0.5": 0.0560566938007128,
+    "per_class_AP_0.5:0.95": {
+      "pedestrian": 0.006302096277587191,
+      "people": 0.00396039603960396,
+      "bicycle": 0.0042879510025829225,
+      "car": 0.04074435245849261,
+      "van": 0.021447493248886975,
+      "truck": 0.03969981856994744,
+      "tricycle": 0.0017517136329017516,
+      "awning-tricycle": 0.0,
+      "bus": 0.01952960055384091,
+      "motor": 0.00968161632390172
+    }
+  }
+}

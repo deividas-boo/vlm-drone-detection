@@ -1,0 +1,50 @@
+EXPLANATION QUALITY RUBRIC
+==========================
+Used to score VLM-generated explanations for object detections (RQ2).
+Each criterion is scored 0, 1, or 2. Max total score per explanation: 10.
+
+
+1. VISUAL GROUNDING (0-2)
+   Does the explanation refer to things actually visible in the image?
+   0 = No visual evidence mentioned (e.g. "this is a car because cars exist")
+   1 = Mentions something visible but vague (e.g. "a dark rectangular shape")
+   2 = Mentions specific visible features (e.g. "rectangular shape with four wheels and a shadow")
+
+2. CORRECTNESS (0-2)
+   Is the description of the object accurate?
+   0 = Wrong or contradicts the image
+   1 = Partially correct, minor errors
+   2 = Correct and matches what is visible
+
+3. RELEVANCE (0-2)
+   Is the explanation about the detected object, not the background or other objects?
+   0 = Mostly describes the wrong region or unrelated scene elements
+   1 = Mixes detected object with surrounding context
+   2 = Clearly focused on the detected object
+
+4. NO HALLUCINATION (0-2)
+   Does the explanation avoid making up details that are not visible?
+   0 = Contains clearly invented details (e.g. "the driver is wearing a red hat")
+   1 = Contains uncertain details presented as fact
+   2 = Only describes what can reasonably be seen
+
+5. USEFULNESS (0-2)
+   Would this explanation help a human operator understand or verify the detection?
+   0 = Not helpful at all
+   1 = Somewhat helpful
+   2 = Clearly helpful — gives the operator something to act on
+
+
+SCORING GUIDE
+-------------
+9-10  Excellent — explanation is reliable and informative
+6-8   Good — mostly correct with minor issues
+3-5   Weak — some relevant content but unreliable
+0-2   Poor — not useful or misleading
+
+
+NOTES
+-----
+- Score based only on what is visible in the image, not on external knowledge
+- A short but accurate explanation can score higher than a long hallucinated one
+- For small or blurry objects, lower scores on Visual Grounding are expected

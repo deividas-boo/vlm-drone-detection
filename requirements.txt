@@ -1,0 +1,10 @@
+# Local scripts (dataset conversion, YOLO inference, evaluation, visualisation)
+ultralytics>=8.3
+pycocotools>=2.0
+opencv-python>=4.8
+pillow>=10.0
+numpy>=1.26
+pyyaml>=6.0
+
+# VLM notebooks (run on Kaggle, T4 GPU) additionally need:
+# torch, accelerate, transformers>=5.10.1, json-repair, supervision
